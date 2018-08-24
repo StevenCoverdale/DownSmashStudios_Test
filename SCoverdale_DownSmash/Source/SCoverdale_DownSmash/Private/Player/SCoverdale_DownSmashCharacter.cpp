@@ -105,10 +105,6 @@ void ASCoverdale_DownSmashCharacter::AddHealth(float Amount)
 {
 	Health += Amount;
 	OnUpdateUI.Broadcast();
-
-
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Pressed Key %d"), Health));
 }
 
 int ASCoverdale_DownSmashCharacter::GetGears()

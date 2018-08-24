@@ -26,7 +26,6 @@ ASC_BuildingBase::ASC_BuildingBase()
 	BaseMesh->SetCollisionResponseToAllChannels(ECR_Overlap);
 	BaseMesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	BaseMesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Ignore);
-
 }
 
 void ASC_BuildingBase::OnOverlapStart(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
